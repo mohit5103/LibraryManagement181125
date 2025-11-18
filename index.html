@@ -1,0 +1,20 @@
+<h1>Library Management System</h1>
+<p><a href="/users">View Users</a> | <a href="/books">View Books</a></p>
+
+<h2>Add User</h2>
+<form method="POST" action="/add_user">
+  <input type="text" name="name" placeholder="User Name" required>
+  <button type="submit">Add User</button>
+</form>
+
+<h2>Add Book</h2>
+<form method="POST" action="/add_book">
+  <input type="text" name="title" placeholder="Book Title" required>
+  <input type="text" name="author" placeholder="Author" required>
+  <select name="tag">
+    <option value="available_to_all">Available to All</option>
+    <option value="premium">Premium</option>
+  </select>
+  <input type="number" name="copies" placeholder="Number of Copies" min="1" required>
+  <button type="submit">Add Book</button>
+</form>
